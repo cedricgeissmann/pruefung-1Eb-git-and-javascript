@@ -41,7 +41,7 @@ function animationLoop() {
 
     // End Loop
     
-    // Kommentiere hier (e)
+    // Kommentiere hier (e) // circle1 und circle2, welche im HTML für cx1 und cx2 sind und für cx stehen, werden mit javascript verknüpft.
     circle1.setAttribute("cx", cx1)
     circle2.setAttribute("cx", cx2)
 
