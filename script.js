@@ -18,6 +18,12 @@ function start() {
     circle2.setAttribute("cx", 20)
     if(cx2 <= 92){
 
+        if(cx1 > cx2){
+            count = 1++
+        } else if(cx2 < cx1){
+            count = 1++
+        }
+
         count = 0
         v1 = -1
         v2 = 0
