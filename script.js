@@ -10,7 +10,7 @@ let v1 = 0
 let v2 = 0
 let digits = 1
 let m = 100**digits
-let repetitions = 1
+let repetitions = 10000
 let count = 0
 
 function start() {
@@ -51,8 +51,8 @@ function animationLoop() {
     cx2 = cx2 + v2 / repetitions
 
 
-    for (d = 0; d = repetitions; d = d + 1 ){
-        
+    for (d = 5; d = repetitions; d = d + 1 ){
+
     }
 
     // End Loop
