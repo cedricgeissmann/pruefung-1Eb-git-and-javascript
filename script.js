@@ -1,6 +1,6 @@
 
 // Kommentiere hier (b)
-// 
+// Man setzt den Kreis mit der Id circ1 und circ2, damit man mit diesem Arbeiten kann. Den Kreis findet man in der html-Datei. 
 const circle1 = document.querySelector("#circ1")
 const circle2 = document.querySelector("#circ2")
 
@@ -25,7 +25,7 @@ function start() {
 function animationLoop() {
     
     // Kommentiere hier (c)    
-    // 
+    // mit dem parseFloat kann man alle Zahlen auch mit Kommastellen angeben lassen die dann dazuführen dass sich der Attribute "cx" verändert.(kann auch beispielsweise "cy" sein)
     let cx1 = parseFloat(circle1.getAttribute("cx"))     
     let cx2 = parseFloat(circle2.getAttribute("cx"))     
 
@@ -35,18 +35,19 @@ function animationLoop() {
     }
 
     // Kommentiere hier (d)
-    // 
+    // eine neue Bedingung wird für das Attribute cx1 und cx2 wird bestimmt.
     cx1 = cx1 + v1 / repetitions
     cx2 = cx2 + v2 / repetitions
 
     // End Loop
     
     // Kommentiere hier (e)
+    // hier wird der Kreis mit seinen neuen Attribut-Werten/Bedingungen gesetzt.
     circle1.setAttribute("cx", cx1)
     circle2.setAttribute("cx", cx2)
 
     // Kommentiere hier (f)
-    // 
+    // "===" mit dem wird untersucht ob der Wert auf der linken Seite des "===" gleich ist wie der auf der rechten Seite.
     if ( running === true ) {
         window.requestAnimationFrame(animationLoop)
     }
