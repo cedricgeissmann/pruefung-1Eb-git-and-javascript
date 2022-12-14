@@ -43,6 +43,16 @@ function animationLoop() {
         count = + 1
     }
 
+    function aufgabe_02() {
+        
+        let repetitions = parseInt(read())
+    
+        for ( let i = 0; i < repetitions; i++) {
+            print(i)
+        }
+    }
+    
+
     // End Loop
     
     // hier wird geschrieben, dass sich der Kreis cx1 auf der cx Achse bewegt und der cx2 ebenfalls (e)
