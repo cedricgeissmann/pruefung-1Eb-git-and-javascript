@@ -47,7 +47,7 @@ function animationLoop() {
     circle2.setAttribute("cx", cx2)
 
     // Kommentiere hier (f)
-    // 
+    // Hier stellt man eine if Bedingung. Hier lautet sie, dass "running" true sein muss. Ist dies so, dann soll beim nächsten Neu-Laden der Seite, die Funktion animationLoop nocheinmals ausgeführt werden. Dies führt zu einer unendlichen Schleife der Funktion animationLoop, solange running= true ist. Zu Beginn ist running false, aber sobald man start drückt wird es zu true und somit ensteht die Schelife, da mit dem Drücken von Start auch automatisch animationLoop ausgeführt wird.
     if ( running === true ) {
         window.requestAnimationFrame(animationLoop)
     }
