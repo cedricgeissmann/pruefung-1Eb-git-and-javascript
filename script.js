@@ -25,7 +25,7 @@ function start() {
 function animationLoop() {
     
     // Kommentiere hier (c)    
-    // 
+    // mit dem parseFloat kann man alle Zahlen auch mit Kommastellen angeben lassen die dann dazuführen dass sich der Attribute "cx" verändert.(kann auch beispielsweise "cy" sein)
     let cx1 = parseFloat(circle1.getAttribute("cx"))     
     let cx2 = parseFloat(circle2.getAttribute("cx"))     
 
