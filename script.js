@@ -7,9 +7,9 @@ const circle2 = document.querySelector("#circ2")
 let running = false
 let v1 = 0
 let v2 = 0
-let digits = 1
+let digits = 5
 let m = 100**digits
-let repetitions = 1
+let repetitions = 10000
 let count = 0
 
 function start(Start) {
@@ -20,6 +20,10 @@ function start(Start) {
     v1 = -1
     v2 = 0
     window.requestAnimationFrame(animationLoop)
+    if  circ1 + circ2 {
+        let ( let count = 0; i <= upperBound; count=count+1) 
+    }
+    
 }
 
 function stop(STOP) {
@@ -38,8 +42,18 @@ function animationLoop() {
     let cx2 = parseFloat(circle2.getAttribute("cx"))     
 
     // Start Loop
-    if (false) { // Aufgabe (4b)
+    if (cx1> cx2 + 10) { // Aufgabe (4b)
         ({v1, v2} = newVelocity(v1, v2))
+    }
+
+    function () {
+        
+        let upperBound = cx1(read())
+        let upperBound = cx2(read())
+        
+        for ( let cx1, cx2= 0; i < upperBound; i++ till repetitions) {
+            
+        }
     }
 
     // Kommentiere hier (d)
@@ -67,8 +81,15 @@ function newVelocity(v1, v2) {
         v1: (m * v1 + (2 * v2 - v1)) / (m + 1),
         v2: (v2 + m * (2 * v1 - v2)) / (m + 1)
     }
+
+    if  circ2 touches left border 
+    let num v2= -num + count= +1 
+
+    }
 }
 
-function displayNumber() {
+function displayNumber(#zahl) {
     return (count / 10**digits).toFixed(digits)
 }
+
+// 1/10 *9 = 90
