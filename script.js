@@ -1,7 +1,8 @@
 
 // Kommentiere hier (b)
-// const bedeutet das es für alle circle1/2 elemente gilt.
-//  circ 1/2 wurden vom html hier hin verlinkteingefügt
+// const sagt das es für alle circle1/2 elemente gilt
+//jedes mal wennn unter einer function document.query.. aufgerufen wird, wird circ1/2 
+//automatisch auch uslösen welche im htmldefiniert sind.
 const circle1 = document.querySelector("#circ1")
 const circle2 = document.querySelector("#circ2")
 
@@ -26,7 +27,8 @@ function start() {
 function animationLoop() {
     
     // Kommentiere hier (c)    
-    // 
+    // in dieser function wird das was das attribut uns angiebt in einer ganzen zahl verwandelt.
+    // die zahlen können nur in ganzen schritten arbeiten weil das parse float auslöst also (1,2,3..) nicht in komma zahlen.
     let cx1 = parseFloat(circle1.getAttribute("cx"))     
     let cx2 = parseFloat(circle2.getAttribute("cx"))     
 
