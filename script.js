@@ -7,9 +7,9 @@ const circle2 = document.querySelector("#circ2")
 let running = false
 let v1 = 0
 let v2 = 0
-let digits = 1
+let digits = 5
 let m = 100**digits
-let repetitions = 1
+let repetitions = 1000
 let count = 0
 
 function start() {
@@ -53,7 +53,7 @@ function animationLoop() {
     cx2 = cx2 + v2 / repetitions
 
     // End Loop
-    
+
     // Hier werden cx1 und cx2 wieder auf ihre ursprünglichen Werte gesetzt. Der zuvor neu hinzugefügte Wert wird wieder gelöscht.
     circle1.setAttribute("cx", cx1)
     circle2.setAttribute("cx", cx2)
