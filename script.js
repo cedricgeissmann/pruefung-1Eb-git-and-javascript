@@ -35,7 +35,7 @@ function animationLoop() {
     }
 
     // Kommentiere hier (d)
-    // 
+    // eine neue Bedingung wird für das Attribute cx1 und cx2 wird bestimmt.
     cx1 = cx1 + v1 / repetitions
     cx2 = cx2 + v2 / repetitions
 
