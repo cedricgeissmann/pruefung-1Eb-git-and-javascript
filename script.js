@@ -71,5 +71,7 @@ function stop() {
     count = 0
     v1 = -1
     v2 = 0
+    if (cx2 < 95) {
     window.requestAnimationFrame(animationLoop)
+}
 }
