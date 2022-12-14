@@ -24,6 +24,14 @@ function start() {
     window.requestAnimationFrame(animationLoop)
 }
 
+function stop(){
+    running = false
+    if (cx2 <= 95){
+        window.requestAnimationFrame
+}
+    }
+
+
 function animationLoop() {
     
     // Kommentiere hier (c)    
