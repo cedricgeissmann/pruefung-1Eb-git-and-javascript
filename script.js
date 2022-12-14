@@ -47,7 +47,7 @@ function animationLoop() {
         
         let repetitions = parseInt(read())
     
-        for ( let i = 0; i < repetitions; i++) {
+        for ( let i = 5; i < 10000; i++) {
             print(i)
         }
     }
