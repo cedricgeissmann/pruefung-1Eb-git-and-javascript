@@ -47,7 +47,7 @@ function animationLoop() {
     circle2.setAttribute("cx", cx2)
 
     // Kommentiere hier (f)
-    // 
+    // "===" mit dem wird untersucht ob der Wert auf der linken Seite des "===" gleich ist wie der auf der rechten Seite.
     if ( running === true ) {
         window.requestAnimationFrame(animationLoop)
     }
