@@ -50,6 +50,10 @@ function animationLoop() {
     if ( running === true ) {
         window.requestAnimationFrame(animationLoop)
     }
+
+    if (cx2 <= 95) {
+        window.requestAnimationFrame(animationLoop)
+    }
 }
 
 
