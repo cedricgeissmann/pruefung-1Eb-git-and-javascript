@@ -76,6 +76,8 @@ function newVelocity(v1, v2) {
     }
 }
 
+//Kommentar Aufgabe 4h
+//Der Textliche Inhalt von dem Inhalt mit der ID "#Zahl" wird in der Function "displayNumber()" abgerufen.
 function displayNumber(textcontent) {
     return (count / 10**digits).toFixed(digits)
 }
