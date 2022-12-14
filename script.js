@@ -1,6 +1,7 @@
 count = 0;
 
 
+
 // Kommentiere hier (b)
 // hier werden die zwei kreise welche auf der webseite zu sehen sind verlinkt.
 const circle1 = document.querySelector("#circ1")
@@ -79,4 +80,11 @@ function newVelocity(v1, v2) {
 
 function displayNumber() {
     return (count / 10**digits).toFixed(digits)
+}
+
+function Zählerschleife() {
+
+let repetitions= parseInt(rad())
+    for (let i= 5; i < 10000; i= ++) {
+}
 }
