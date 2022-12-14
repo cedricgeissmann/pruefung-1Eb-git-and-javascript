@@ -34,7 +34,7 @@ function animationLoop() {
         ({v1, v2} = newVelocity(v1, v2))
     }
 
-    // Kommentiere hier (d)
+    // cx1 und cx2 erhalten einen neuen Wert. Zu ihnen wird eine Geschwindigkeit hinzugerechent und dann noch durch die Anzahl Wiederholungen geteilt. 
     // 
     cx1 = cx1 + v1 / repetitions
     cx2 = cx2 + v2 / repetitions
