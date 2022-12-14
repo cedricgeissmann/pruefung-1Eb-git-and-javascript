@@ -62,6 +62,10 @@ function animationLoop() {
     if (cx1=cx2){
         count=count + 1
     }
+    if (cx1=80) {
+        v1 = v1*(-1)
+        count = count + 1
+    }
 }
 
 
