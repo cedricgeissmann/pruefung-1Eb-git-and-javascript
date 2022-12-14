@@ -1,6 +1,6 @@
 
 // Kommentiere hier (b)
-// 
+// hier werden die zwei kreise welche auf der webseite zu sehen sind verlinkt.
 const circle1 = document.querySelector("#circ1")
 const circle2 = document.querySelector("#circ2")
 
