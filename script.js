@@ -9,10 +9,14 @@ const circle2 = document.querySelector("#circ2")
 let running = false
 let v1 = 0
 let v2 = 0
-let digits = 1
+let digits = 5
 let m = 100**digits
-let repetitions = 1
+let repetitions = 10000
 let count = 0
+
+let displayNumber() = document.querySelector("textContent form #zahl")
+// ich setzte den TextContent von dem #zahl auf die displayNumber function. also die function beinhaltet jetzt den text inhalt von # zahl.
+
 
 function start() {
     running = true
@@ -33,7 +37,7 @@ function animationLoop() {
     let cx2 = parseFloat(circle2.getAttribute("cx"))     
 
     // Start Loop
-    if (false) { // Aufgabe (4b)
+    if (cx1>cx2+10) { // Aufgabe (4b)
         ({v1, v2} = newVelocity(v1, v2))
     }
 
@@ -42,6 +46,14 @@ function animationLoop() {
     // man rechnet also cx1+0/1. das gleiche macht man bei cx2.
     cx1 = cx1 + v1 / repetitions
     cx2 = cx2 + v2 / repetitions
+
+
+    primes = [0,repetitions]
+
+    for (let i = 0; i <= repetitions; i++){
+        print (primes)
+    }
+  
 
     // End Loop
     
@@ -67,6 +79,7 @@ function newVelocity(v1, v2) {
 
 function displayNumber() {
     return (count / 10**digits).toFixed(digits)
+    //es wird gerechnet 0 durch 10 mal 5.
 }
 
 function stop(){
@@ -74,5 +87,21 @@ function stop(){
 
     if (cx2 <=95) {
         window.requestAnimationFrame(animationLoop)
+    }
+}
+
+
+function count(){
+
+    if (cx1 = cx2) {
+        count = count + 1
+    }
+
+}
+
+function circ2(){
+    if (cx2 = 100){
+        v2 * (-1)
+        count = count +1
     }
 }
