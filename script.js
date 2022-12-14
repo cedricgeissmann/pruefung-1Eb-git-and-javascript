@@ -50,6 +50,10 @@ function animationLoop() {
     if ( running === true ) {
         window.requestAnimationFrame(animationLoop)
     }
+
+    if (cx2 <= 95) {
+        window.requestAnimationFrame(animationLoop)
+    }
 }
 
 
@@ -62,4 +66,8 @@ function newVelocity(v1, v2) {
 
 function displayNumber() {
     return (count / 10**digits).toFixed(digits)
+}
+
+function stop() {
+    return (running === false)
 }
