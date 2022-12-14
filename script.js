@@ -1,6 +1,7 @@
 
 // Kommentiere hier (b)
-// 
+// const bedeutet das es für alle circle1/2 elemente gilt.
+//  circ 1/2 wurden vom html hier hin verlinkteingefügt
 const circle1 = document.querySelector("#circ1")
 const circle2 = document.querySelector("#circ2")
 
@@ -42,6 +43,7 @@ function animationLoop() {
     // End Loop
     
     // Kommentiere hier (e)
+
     circle1.setAttribute("cx", cx1)
     circle2.setAttribute("cx", cx2)
 
