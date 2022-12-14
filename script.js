@@ -26,7 +26,11 @@ function start() {
 
 function stop(){
     running = false
+    if (cx2 <= 95){
+        window.requestAnimationFrame
 }
+    }
+
 
 function animationLoop() {
     
