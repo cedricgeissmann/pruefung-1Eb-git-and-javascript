@@ -1,6 +1,7 @@
 
 // Kommentiere hier (b)
-// 
+// Die untenstehenden Codezeilen beschreiben die beiden Variabeln circle1, wie circle2, 
+//welche jeweils einem Kreiselement aus dem index mit den ID's circ1 und circ2 zugewiesen wurden.
 const circle1 = document.querySelector("#circ1")
 const circle2 = document.querySelector("#circ2")
 
