@@ -35,7 +35,7 @@ function animationLoop() {
     }
 
     // Kommentiere hier (d)
-    // 
+    // cx1 entspricht cx1 plus v1 (also cx plus v1) das wird wiederholt.
     cx1 = cx1 + v1 / repetitions
     cx2 = cx2 + v2 / repetitions
 
