@@ -91,3 +91,5 @@ function newVelocity(v1, v2) {
 function displayNumber(#zahl) {
     return (count / 10**digits).toFixed(digits)
 }
+
+// 1/10 *9 = 90
