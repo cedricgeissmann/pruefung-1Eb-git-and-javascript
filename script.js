@@ -37,10 +37,18 @@ function animationLoop() {
     let cx2 = parseFloat(circle2.getAttribute("cx"))     
 
     // Start Loop
-    if (false) { // Aufgabe (4b)
+    if (cx1>cx2+10) { // Aufgabe (4b)
         ({v1, v2} = newVelocity(v1, v2))
+        count = count + 1
     }
 
+    if (cx=BerührunglinkerRand){
+        v1 = v2 * -1
+        count = count + 1
+    }
+
+
+    for(i=0; i<=EndLoop; i++)
     // Kommentiere hier (d)
     // Wenn die Funktion falsch is erhalten v1 und v2 eine neue Geschwindigkeit
     cx1 = cx1 + v1 / repetitions
