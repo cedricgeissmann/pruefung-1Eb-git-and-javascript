@@ -46,6 +46,8 @@ function animationLoop() {
     // End Loop
     
     // Kommentiere hier (e)
+    //In diesen Codezeilen werden nun schlussendlich noch die zuvor neu zugeordneten Variabeln cx1 und cx2, den beiden Variabeln
+    //circle1 und circle2 zugeordnet, beziehungsweise deren cx Werte mit den Werten aus cx1 und cx2 überschrieben.
     circle1.setAttribute("cx", cx1)
     circle2.setAttribute("cx", cx2)
 
