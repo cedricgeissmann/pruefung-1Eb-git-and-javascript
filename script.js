@@ -12,7 +12,7 @@ let m = 100**digits
 let repetitions = 1
 let count = 0
 
-function start() {
+function START() {
     running = true
     circle1.setAttribute("cx", 80)
     circle2.setAttribute("cx", 20)
