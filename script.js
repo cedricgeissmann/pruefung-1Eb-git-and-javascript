@@ -61,7 +61,7 @@ function animationLoop() {
         window.requestAnimationFrame(animationLoop)
     }
 
-    if (cx1 Touch border ) {
+    if (cx1 (Touch = boder) ) {
         v2 = v2* (-1)
         counter = counter + 1
     }
@@ -85,6 +85,6 @@ function displayNumber() {
 function Zählerschleife() {
 
 let repetitions= parseInt(rad())
-    for (let i= 5; i < 10000; i= ++) {
+    for (let i= 5; i < 10000; i++) {
 }
 }
