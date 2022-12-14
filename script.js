@@ -81,3 +81,6 @@ function displayNumber() {
 function Stop() {
 running = false 
 }
+
+let zahl = document.querySelector("#zahl")
+zahl.textContent = displayNumber()
