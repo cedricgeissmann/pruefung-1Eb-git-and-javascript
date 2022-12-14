@@ -52,7 +52,10 @@ function animationLoop() {
     circle2.setAttribute("cx", cx2)
 
     // Kommentiere hier (f)
-    // 
+    // Diese letzte Codezeile ist nun noch einmal sehr wichtig, weil sie die Funktionalität des gesammten Codes ausmacht:
+    // Die Bedingung if (running===true) überprüft ob die Bedingung gegeben ist (Wenn sie einmal durch start() gegeben ist, ist sie
+    //dauerhaft gegeben und die darauf folgende Funktion wird ausgeführt, welche das Performing einer neuen Animation wünscht, durch was
+    //die Funktion animationLoop() ausgeführt wird. Folge dessen ist eine sich immer wieder wiederholende Schleife das Resultat!)
     if ( running === true ) {
         window.requestAnimationFrame(animationLoop)
     }
