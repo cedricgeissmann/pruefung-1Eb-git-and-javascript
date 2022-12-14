@@ -51,7 +51,7 @@ function animationLoop() {
     circle2.setAttribute("cx", cx2)
 
     // Kommentiere hier (f)
-    // 
+    //  wenn running = true ist wird die function animationLoop ausgelsöt
     if ( running === true ) {
         window.requestAnimationFrame(animationLoop)
     }
