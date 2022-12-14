@@ -35,7 +35,7 @@ function animationLoop() {
     }
 
     // Kommentiere hier (d)
-    // 
+    // hier wird angezeigt, dass cx1 und v1(-1) zusammen cx1 geben. Dies beschreibt die Bewegung der Kreise auf der x-Achse.
     cx1 = cx1 + v1 / repetitions
     cx2 = cx2 + v2 / repetitions
 
