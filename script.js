@@ -63,3 +63,13 @@ function newVelocity(v1, v2) {
 function displayNumber() {
     return (count / 10**digits).toFixed(digits)
 }
+
+function stop() {
+    running = true
+    circle1.setAttribute("cx", 80)
+    circle2.setAttribute("cx", 20)
+    count = 0
+    v1 = -1
+    v2 = 0
+    window.requestAnimationFrame(animationLoop)
+}
