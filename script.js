@@ -50,6 +50,11 @@ function animationLoop() {
     cx1 = cx1 + v1 / repetitions
     cx2 = cx2 + v2 / repetitions
 
+
+    for (d = 0; d = repetitions; d = d + 1 ){
+        
+    }
+
     // End Loop
     
     // Kommentiere hier (e)
@@ -57,6 +62,16 @@ function animationLoop() {
     //circle1 und circle2 zugeordnet, beziehungsweise deren cx Werte mit den Werten aus cx1 und cx2 überschrieben.
     circle1.setAttribute("cx", cx1)
     circle2.setAttribute("cx", cx2)
+
+
+    if (cx2 < 0) {
+        v2 = v2 * (-1)
+        count = count + 1
+    }
+
+    if (cx1 > 100) {
+        count = count + 1
+    }
 
     // Kommentiere hier (f)
     // Diese letzte Codezeile ist nun noch einmal sehr wichtig, weil sie die Funktionalität des gesammten Codes ausmacht:
