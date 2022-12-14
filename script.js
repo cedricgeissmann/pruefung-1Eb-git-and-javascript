@@ -43,10 +43,12 @@ function animationLoop() {
     }
 
     if (cx=BerührunglinkerRand){
-        v1 = v1 * -1
+        v1 = v2 * -1
         count = count + 1
     }
 
+
+    for(StartLoop=1;)
     // Kommentiere hier (d)
     // Wenn die Funktion falsch is erhalten v1 und v2 eine neue Geschwindigkeit
     cx1 = cx1 + v1 / repetitions
