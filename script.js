@@ -51,6 +51,13 @@ function animationLoop() {
     if ( running === true ) {
         window.requestAnimationFrame(animationLoop)
     }
+
+    if ( circle2 = 100 ) {
+        v1 = v1 * (-1)
+        count = count + 1
+
+
+    }
 }
 
 
@@ -81,3 +88,5 @@ function count() {
     }
 
 }
+
+
