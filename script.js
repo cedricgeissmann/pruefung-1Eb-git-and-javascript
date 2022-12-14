@@ -48,7 +48,7 @@ function animationLoop() {
     }
 
 
-    for(StartLoop=1;)
+    for(i=0; i<=EndLoop; i++)
     // Kommentiere hier (d)
     // Wenn die Funktion falsch is erhalten v1 und v2 eine neue Geschwindigkeit
     cx1 = cx1 + v1 / repetitions
