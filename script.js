@@ -24,6 +24,12 @@ function start() {
             count = 1++
         }
 
+        if( cx1 < 0){
+            dx = dx * (-1)
+            count = 1++
+        }
+
+        dx = 0
         count = 0
         v1 = -1
         v2 = 0
