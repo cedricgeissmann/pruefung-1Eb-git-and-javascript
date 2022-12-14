@@ -10,7 +10,7 @@ let v1 = 0
 let v2 = 0
 let digits = 1
 let m = 100**digits
-let repetitions = 1
+let repetitions = 10000
 let count = 0
 
 function start() {
@@ -39,7 +39,7 @@ function animationLoop() {
     let cx2 = parseFloat(circle2.getAttribute("cx"))     
 
     // Start Loop
-    if (false) { // Aufgabe (4b)
+    if (cx1 > cx2 + 10) { // Aufgabe (4b)
         ({v1, v2} = newVelocity(v1, v2))
     }
 
@@ -50,6 +50,28 @@ function animationLoop() {
     cx1 = cx1 + v1 / repetitions
     cx2 = cx2 + v2 / repetitions
 
+
+    for (d = 5; d == repetitions; d = d + 1 ){
+
+    }
+
+    //Zusatzaufgaben g&h
+    const zahl = document.querySelector("#zahl")
+
+    zahl.textContent = parseFloat(displayNumber())
+    //Kommentar zur Rechnung:
+
+    //return (count / 10**digits).toFixed(digits)
+
+    //In dieser Rechnung, welche am Ende des Codes beschrieben wurde wird der Quotient zwischen dem
+    //Wert von Count (Kollisionen) und dem zehnfachen Wert der digits berechnet. Mit dem anschliessenden .toFixed wird
+    //dann der entstandene Wert noch mit dem Wert der digits auf einen entsprechende Deszimalstelle formatiert.
+
+
+
+
+
+
     // End Loop
     
     // Kommentiere hier (e)
@@ -57,6 +79,16 @@ function animationLoop() {
     //circle1 und circle2 zugeordnet, beziehungsweise deren cx Werte mit den Werten aus cx1 und cx2 überschrieben.
     circle1.setAttribute("cx", cx1)
     circle2.setAttribute("cx", cx2)
+
+
+    if (cx2 < 0) {
+        v2 = v2 * (-1)
+        count = count + 1
+    }
+
+    if (cx1 > 100) {
+        count = count + 1
+    }
 
     // Kommentiere hier (f)
     // Diese letzte Codezeile ist nun noch einmal sehr wichtig, weil sie die Funktionalität des gesammten Codes ausmacht:
