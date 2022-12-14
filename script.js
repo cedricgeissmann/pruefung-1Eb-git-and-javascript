@@ -25,7 +25,7 @@ function start() {
 function animationLoop() {
     
     // Kommentiere hier (c)    
-    // 
+    // lass cx1 (also die x coordinate) entspricht parsefloat(verwandelt es in zahlen und das float sagt noch komma zahlen) und bekommt ein Attribut.
     let cx1 = parseFloat(circle1.getAttribute("cx"))     
     let cx2 = parseFloat(circle2.getAttribute("cx"))     
 
