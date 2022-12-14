@@ -51,9 +51,26 @@ function animationLoop() {
     cx2 = cx2 + v2 / repetitions
 
 
-    for (d = 5; d = repetitions; d = d + 1 ){
+    for (d = 5; d == repetitions; d = d + 1 ){
 
     }
+
+    //Zusatzaufgaben g&h
+    const zahl = document.querySelector("#zahl")
+
+    zahl.textContent = parseFloat(displayNumber())
+    //Kommentar zur Rechnung:
+
+    //return (count / 10**digits).toFixed(digits)
+
+    //In dieser Rechnung, welche am Ende des Codes beschrieben wurde wird der Quotient zwischen dem
+    //Wert von Count (Kollisionen) und dem zehnfachen Wert der digits berechnet. Mit dem anschliessenden .toFixed wird
+    //dann der entstandene Wert noch mit dem Wert der digits auf einen entsprechende Deszimalstelle formatiert.
+
+
+
+
+
 
     // End Loop
     
