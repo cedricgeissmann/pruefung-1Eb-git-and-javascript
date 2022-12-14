@@ -1,5 +1,5 @@
 
-// Kommentiere hier (b)
+// Es werden die zwei svg Kreise aus dem HTML geholt und ihnen wirden die Konstanten circle1 und circle2 gegeben. Mit dem # wird diee ID angegeben. Nun kann man im Javascript mit den zwei Konstanten an den Kreisen arbeiten   
 // 
 const circle1 = document.querySelector("#circ1")
 const circle2 = document.querySelector("#circ2")
@@ -24,7 +24,7 @@ function start() {
 
 function animationLoop() {
     
-    // Kommentiere hier (c)    
+    // cx1 und cx2 erhalten ein Attribut, also wofüt sie stehen(was aus dem svg sie darstellen). Zuerst wird noch angegeben, dass sie eine Kommazahl darstellen können(parseFloat).    
     // 
     let cx1 = parseFloat(circle1.getAttribute("cx"))     
     let cx2 = parseFloat(circle2.getAttribute("cx"))     
@@ -34,18 +34,18 @@ function animationLoop() {
         ({v1, v2} = newVelocity(v1, v2))
     }
 
-    // Kommentiere hier (d)
+    // cx1 und cx2 erhalten einen neuen Wert. Zu ihnen wird eine Geschwindigkeit hinzugerechent und dann noch durch die Anzahl Wiederholungen geteilt. 
     // 
     cx1 = cx1 + v1 / repetitions
     cx2 = cx2 + v2 / repetitions
 
     // End Loop
     
-    // Kommentiere hier (e)
+    // Hier werden cx1 und cx2 wieder auf ihre ursprünglichen Werte gesetzt. Der zuvor neu hinzugefügte Wert wird wieder gelöscht.
     circle1.setAttribute("cx", cx1)
     circle2.setAttribute("cx", cx2)
 
-    // Kommentiere hier (f)
+    // Wenn der running-Wert nun stimmt (true ist, anstatt wie ganz am Anfang falsch), dann wird die Animation wieder neu gestartet. Also das Fenster in dem sie ist wird wieder geöffnet.
     // 
     if ( running === true ) {
         window.requestAnimationFrame(animationLoop)
