@@ -47,7 +47,7 @@ function animationLoop() {
     circle2.setAttribute("cx", cx2)
 
     // Kommentiere hier (f)
-    // 
+    // Hier sagen Sie, dass wen die Funktion running true(also richitg) ist, soll die Animation geloopt werden.
     if ( running === true ) {
         window.requestAnimationFrame(animationLoop)
     }
