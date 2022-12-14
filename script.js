@@ -1,6 +1,6 @@
 
 // Kommentiere hier (b)
-// 
+// hier werden die zwei kreise welche auf der webseite zu sehen sind verlinkt.
 const circle1 = document.querySelector("#circ1")
 const circle2 = document.querySelector("#circ2")
 
@@ -25,7 +25,7 @@ function start() {
 function animationLoop() {
     
     // Kommentiere hier (c)    
-    // 
+    // Hier wird den kreisen befohlen, dass sie sich in der x Achse bewegen werden.
     let cx1 = parseFloat(circle1.getAttribute("cx"))     
     let cx2 = parseFloat(circle2.getAttribute("cx"))     
 
@@ -35,18 +35,18 @@ function animationLoop() {
     }
 
     // Kommentiere hier (d)
-    // 
+    // hier wird angezeigt, dass cx1 und v1(-1) zusammen cx1 geben. Dies beschreibt die Bewegung der Kreise auf der x-Achse.
     cx1 = cx1 + v1 / repetitions
     cx2 = cx2 + v2 / repetitions
 
     // End Loop
     
-    // Kommentiere hier (e)
+    // Hier werden Attribute gesetzt (e)
     circle1.setAttribute("cx", cx1)
     circle2.setAttribute("cx", cx2)
 
     // Kommentiere hier (f)
-    // 
+    // Hier wird gesagt, dass running den gleichen Wert hat als true. Es werden 3 = verwendet, denn sont heisst das nicht, dass die zwei elemente gleich sind.
     if ( running === true ) {
         window.requestAnimationFrame(animationLoop)
     }
