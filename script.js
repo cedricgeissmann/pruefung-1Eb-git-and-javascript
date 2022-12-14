@@ -14,6 +14,9 @@ let m = 100**digits
 let repetitions = 10000
 let count = 0
 
+let displayNumber() = document.querySelector("textContent form #zahl")
+// ich setzte den TextContent von dem #zahl auf die displayNumber function. also die function beinhaltet jetzt den text inhalt von # zahl.
+
 
 function start() {
     running = true
@@ -76,7 +79,7 @@ function newVelocity(v1, v2) {
 
 function displayNumber() {
     return (count / 10**digits).toFixed(digits)
-
+    //es wird gerechnet 0 durch 10 mal 5.
 }
 
 function stop(){
