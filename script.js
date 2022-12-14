@@ -35,7 +35,7 @@ function animationLoop() {
     }
 
     // Kommentiere hier (d)
-    // 
+    // cx1 + v1 durch die Anzahl Durchläufe soll in cx1 gespeichert werden
     cx1 = cx1 + v1 / repetitions
     cx2 = cx2 + v2 / repetitions
 
