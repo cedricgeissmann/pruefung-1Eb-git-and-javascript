@@ -21,6 +21,7 @@ function start() {
     count = + 1
     v1 = -1
     v2 = 0
+    if ("#circle2" === v2)
     window.requestAnimationFrame(animationLoop)
 }
 
