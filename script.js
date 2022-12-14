@@ -43,7 +43,7 @@ function animationLoop() {
         count = + 1
     }
 
-    function aufgabe_02() {
+    function Zählerschleife() {
         
         let repetitions = parseInt(read())
     
