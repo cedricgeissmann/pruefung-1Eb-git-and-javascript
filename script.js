@@ -1,6 +1,6 @@
 
 // Kommentiere hier (b)
-// 
+// für cricl1 und circ2 aus HTML geben Sie im script die konstanten circle1 und circle2
 const circle1 = document.querySelector("#circ1")
 const circle2 = document.querySelector("#circ2")
 
