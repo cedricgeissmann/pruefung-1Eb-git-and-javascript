@@ -68,3 +68,9 @@ function displayNumber() {
 function STOP() {
     running = false
 }
+
+function requestAnimationFrame () {
+    if (cx2 <= 95) {
+        window.requestAnimationFrame(animationLoop)
+    }
+}
