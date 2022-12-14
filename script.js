@@ -18,6 +18,18 @@ function start() {
     circle2.setAttribute("cx", 20)
     if(cx2 <= 92){
 
+        if(cx1 > cx2){
+            count = 1++
+        } else if(cx2 < cx1){
+            count = 1++
+        }
+
+        if( cx1 < 0){
+            dx = dx * (-1)
+            count = 1++
+        }
+
+        dx = 0
         count = 0
         v1 = -1
         v2 = 0
@@ -37,15 +49,25 @@ function animationLoop() {
     let cx2 = parseFloat(circle2.getAttribute("cx"))     
 
     // Start Loop
-    if (false) { // Aufgabe (4b)
+    if (cx1 ===  cx1 > cx2 + 10) { // Aufgabe (4b)
         ({v1, v2} = newVelocity(v1, v2))
     }
+    let upperBound = parseInt(read())
 
-    // Kommentiere hier (d)
-    // eine neue Bedingung wird für das Attribute cx1 und cx2 wird bestimmt.
-    cx1 = cx1 + v1 / repetitions
-    cx2 = cx2 + v2 / repetitions
+    for  (let i = 0; i = repetition) {
 
+        print(i)
+
+ 
+
+        
+        
+        // Kommentiere hier (d)
+        // eine neue Bedingung wird für das Attribute cx1 und cx2 wird bestimmt.
+        cx1 = cx1 + v1 / repetitions
+        cx2 = cx2 + v2 / repetitions
+        
+    }
     // End Loop
     
     // Kommentiere hier (e)
