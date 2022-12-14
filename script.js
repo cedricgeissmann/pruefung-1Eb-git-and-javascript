@@ -67,7 +67,5 @@ function displayNumber() {
 
 
 function Stop() {
-
-
-
+running = false 
 }
