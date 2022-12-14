@@ -46,7 +46,7 @@ function animationLoop() {
     circle2.setAttribute("cx", cx2)
 
     // Kommentiere hier (f)
-    // 
+    // Hier wird gesagt, dass running den gleichen Wert hat als true. Es werden 3 = verwendet, denn sont heisst das nicht, dass die zwei elemente gleich sind.
     if ( running === true ) {
         window.requestAnimationFrame(animationLoop)
     }
