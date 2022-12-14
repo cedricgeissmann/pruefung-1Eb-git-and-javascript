@@ -47,7 +47,7 @@ function animationLoop() {
     circle2.setAttribute("cx", cx2)
 
     // Kommentiere hier (f)
-    // 
+    // falls running gleich true ist dann...
     if ( running === true ) {
         window.requestAnimationFrame(animationLoop)
     }
