@@ -1,6 +1,6 @@
 
 // Kommentiere hier (b)
-// 
+// Man setzt den Kreis mit der Id circ1 und circ2, damit man mit diesem Arbeiten kann. Den Kreis findet man in der html-Datei. 
 const circle1 = document.querySelector("#circ1")
 const circle2 = document.querySelector("#circ2")
 
