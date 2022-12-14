@@ -1,6 +1,8 @@
 
 // Kommentiere hier (b)
-// 
+// Mit diesem const sagt man das der Variable circle1 der circ1 (svg element) aus dem html zugeordnet wird. 
+//Somit kann man nun den Begriff circle1 für alle functionen verwenden, weil man es am anfang definiert hat.
+//das gleiche macht man mit dem circle2, also man ordnet das circ2 der variable cicle2 zu.
 const circle1 = document.querySelector("#circ1")
 const circle2 = document.querySelector("#circ2")
 
@@ -25,7 +27,8 @@ function start() {
 function animationLoop() {
     
     // Kommentiere hier (c)    
-    // 
+    // Man ordnet nun der Variable cx1 das attribut cx vom circle1, also dem svg element #circ1, zu und sagt, dass cx eine Zahl sein muss, es muss aber keine ganze Zahl sein, es kann auch eine Kommazahl sein.
+    //das gleich macht man mit cx2, einfach dass man den circle2, also das svg element #circ2 nimmt.
     let cx1 = parseFloat(circle1.getAttribute("cx"))     
     let cx2 = parseFloat(circle2.getAttribute("cx"))     
 
@@ -35,18 +38,20 @@ function animationLoop() {
     }
 
     // Kommentiere hier (d)
-    // 
+    // man sagt nun, dass das cx1, welches man oben definiert hat, mit v1 addiert wird. v1 ist gleich 0. dann muss man das durch repetitions rechnen, also durch 1.
+    // man rechnet also cx1+0/1. das gleiche macht man bei cx2.
     cx1 = cx1 + v1 / repetitions
     cx2 = cx2 + v2 / repetitions
 
     // End Loop
     
     // Kommentiere hier (e)
+    //nun sagt man, dass der computer für circle1 respective circle2 cx und cx1 respective cx2 ausgeben muss. und nicht wie am anfang nur cx.
     circle1.setAttribute("cx", cx1)
     circle2.setAttribute("cx", cx2)
 
     // Kommentiere hier (f)
-    // 
+    // mit dem sagt man, dass wenn das running richtig ist, dann soll er im Fenster eine animation Loop zeigen.
     if ( running === true ) {
         window.requestAnimationFrame(animationLoop)
     }
