@@ -70,5 +70,9 @@ function displayNumber() {
 }
 
 function stop(){
-    
+    running === false
+
+    if (cx2 <=95) {
+        window.requestAnimationFrame(animationLoop)
+    }
 }
