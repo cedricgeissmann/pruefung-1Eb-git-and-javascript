@@ -34,7 +34,11 @@ function animationLoop() {
         ({v1, v2} = newVelocity(v1, v2))
     count++
     }
+if (cx2 <= 5) {
+v2 = v2 * (-1)
+count++
 
+}
     // Kommentiere hier (d)
     // Der Wert von cx1 und cx2 wird hier verändert, indem man den Wert von v1 zu cx1 addiert und den Wert von v2 zu cx2 addiert. Damit erhöht man die x koordinate der Kreise exponentiell, da der Wert von v1 und v2 bei jedem Schleifendurchlauf grösser wird. Somit bewegen sich beide Kreise nach unten, mit einer immer höher werdenden Geschwindigkeit. Ebenfalls wird die Zahl zum schluss durch den Wert "repetitions" dividiert, also durch 1 --> ändert nichts am Code.
     cx1 = cx1 + v1 / repetitions
@@ -46,6 +50,7 @@ function animationLoop() {
     // Die veränderten Werte von cx1 und cx2 werden nun wieder den Kreisen zugeordnet. Mit dem Befehl setAttribute wählt man ein gewisses Attribut eines Elementes aus und gibt den neuen Wert an, welches dieses Attribut kriegen sollte.
     circle1.setAttribute("cx", cx1)
     circle2.setAttribute("cx", cx2)
+
 
     // Kommentiere hier (f)
     // Hier stellt man eine if Bedingung. Hier lautet sie, dass "running" true sein muss. Ist dies so, dann soll beim nächsten Neu-Laden der Seite, die Funktion animationLoop nocheinmals ausgeführt werden. Dies führt zu einer unendlichen Schleife der Funktion animationLoop, solange running= true ist. Zu Beginn ist running false, aber sobald man start drückt wird es zu true und somit ensteht die Schelife, da mit dem Drücken von Start auch automatisch animationLoop ausgeführt wird.
