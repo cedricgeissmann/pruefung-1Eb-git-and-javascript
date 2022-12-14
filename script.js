@@ -47,6 +47,9 @@ function animationLoop() {
         ({v1, v2} = newVelocity(v1, v2))
     } if (cx1=== cx2) {
         let count = count + 1
+    } else if (cx1 === 0) {
+        v1 *-1 
+        count +1
     }
     
     // Kommentiere hier (d)
