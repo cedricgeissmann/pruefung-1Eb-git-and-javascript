@@ -47,7 +47,7 @@ function animationLoop() {
     circle2.setAttribute("cx", cx2)
 
     // Kommentiere hier (f)
-    // 
+    // Fals running den geleichen Wert und Typ haben, und dies wahr ist, soll es im Window mit dem AnimationFrame den AnimationLoop anfragen.
     if ( running === true ) {
         window.requestAnimationFrame(animationLoop)
     }
