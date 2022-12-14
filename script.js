@@ -7,9 +7,9 @@ const circle2 = document.querySelector("#circ2")
 let running = false
 let v1 = 0
 let v2 = 0
-let digits = 1
+let digits = 5
 let m = 100**digits
-let repetitions = 1
+let repetitions = 1000
 let count = 0
 
 function start() {
@@ -30,8 +30,21 @@ function animationLoop() {
     let cx2 = parseFloat(circle2.getAttribute("cx"))     
 
     // Start Loop
-    if (false) { // Aufgabe (4b)
+    if (cx1 > cx2 + 10) { // Aufgabe (4b)
         ({v1, v2} = newVelocity(v1, v2))
+    }
+
+
+    // Wenn cx1 und cx2 kollidieren, also den glichen cx Wert haben, dann soll der count um 1 höher schalten.
+    if (cx1 = cx2) {
+        count = count + 1
+    }
+
+
+    // Wenn der blaue Kreis (cx2) den linken Rand berührt, wird bei v1 das vorzeichen gewechselt. Danach wird noch der Count um 1 höher gestellt.
+    if (cx2 < 0) {
+        v2 = v2 * (-1)
+        count = count + 1
     }
 
     // cx1 und cx2 erhalten einen neuen Wert. Zu ihnen wird eine Geschwindigkeit hinzugerechent und dann noch durch die Anzahl Wiederholungen geteilt. 
@@ -40,16 +53,14 @@ function animationLoop() {
     cx2 = cx2 + v2 / repetitions
 
     // End Loop
-    
+
     // Hier werden cx1 und cx2 wieder auf ihre ursprünglichen Werte gesetzt. Der zuvor neu hinzugefügte Wert wird wieder gelöscht.
     circle1.setAttribute("cx", cx1)
     circle2.setAttribute("cx", cx2)
 
     // Wenn der running-Wert nun stimmt (true ist, anstatt wie ganz am Anfang falsch), dann wird die Animation wieder neu gestartet. Also das Fenster in dem sie ist wird wieder geöffnet.
     // 
-    if ( running === true ) {
-        window.requestAnimationFrame(animationLoop)
-    }
+
 
     if (cx2 <= 95) {
         window.requestAnimationFrame(animationLoop)
