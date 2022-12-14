@@ -22,6 +22,10 @@ function start(Start) {
     window.requestAnimationFrame(animationLoop)
 }
 
+function stop(STOP) {
+    
+}
+
 function animationLoop() {
     
     // Kommentiere hier (c)    
