@@ -42,6 +42,7 @@ function animationLoop() {
     // End Loop
     
     // Kommentiere hier (e)
+    // circle1 wird von cx zu cx1 und circle 2 von cx zu cx2
     circle1.setAttribute("cx", cx1)
     circle2.setAttribute("cx", cx2)
 
