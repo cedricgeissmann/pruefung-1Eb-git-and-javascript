@@ -47,7 +47,7 @@ function animationLoop() {
     circle2.setAttribute("cx", cx2)
 
     // Kommentiere hier (f)
-    // 
+    // Wenn "running" wahr ist ("true" entspricht) soll die Framerate vom Fenster abgerufen werden und die Funktion "animationLoop" jedesmal abgerufen werden.
     if ( running === true ) {
         window.requestAnimationFrame(animationLoop)
     }
