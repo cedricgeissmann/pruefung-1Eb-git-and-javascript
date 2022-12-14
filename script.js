@@ -20,6 +20,10 @@ function start(Start) {
     v1 = -1
     v2 = 0
     window.requestAnimationFrame(animationLoop)
+    if  circ1 + circ2 {
+        let ( let count = 0; i <= upperBound; count=count+1) 
+    }
+    
 }
 
 function stop(STOP) {
