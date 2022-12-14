@@ -9,18 +9,19 @@ const circle2 = document.querySelector("#circ2")
 let running = false
 let v1 = 0
 let v2 = 0
-let digits = 1
+let digits = 5
 let m = 100**digits
-let repetitions = 1
+let repetitions = 10000
 let count = 0
-
+// es wird anzahl kreise pro start punkt berechenet und angezeigt.
 function start() {
     running = true
     circle1.setAttribute("cx", 80)
     circle2.setAttribute("cx", 20)
-    count = 0
+    count = + 1
     v1 = -1
     v2 = 0
+    if ("#circle2" === v2)
     window.requestAnimationFrame(animationLoop)
 }
 
@@ -41,9 +42,19 @@ function animationLoop() {
     let cx2 = parseFloat(circle2.getAttribute("cx"))     
 
     // Start Loop
-    if (false) { // Aufgabe (4b)
+    if (cx1 > cx2 +10) { // Aufgabe (4b)
         ({v1, v2} = newVelocity(v1, v2))
     }
+
+
+    
+       
+        let repetitions = parseInt(read())
+    
+        
+        for ( let i = 0; i <= repetitions; i++) {
+            print(i)
+        }
 
     // Kommentiere hier (d)
     // hier wird gezeigt das nach jedem button druck die velocytie beschleunigt & wiederholt wird 
