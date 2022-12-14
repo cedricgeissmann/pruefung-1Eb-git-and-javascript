@@ -25,7 +25,7 @@ function start() {
 function animationLoop() {
     
     // Kommentiere hier (c)    
-    // 
+    // Hier wird den kreisen befohlen, dass sie sich in der x Achse bewegen werden.
     let cx1 = parseFloat(circle1.getAttribute("cx"))     
     let cx2 = parseFloat(circle2.getAttribute("cx"))     
 
