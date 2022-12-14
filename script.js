@@ -14,6 +14,7 @@ let m = 100**digits
 let repetitions = 1
 let count = 0
 
+
 function start() {
     running = true
     circle1.setAttribute("cx", 80)
@@ -74,5 +75,21 @@ function stop(){
 
     if (cx2 <=95) {
         window.requestAnimationFrame(animationLoop)
+    }
+}
+
+
+function count(){
+
+    if (cx1 = cx2) {
+        count = count + 1
+    }
+
+}
+
+function circ2(){
+    if (cx2 = 100){
+        v1 * (-1)
+        count = count +1
     }
 }
