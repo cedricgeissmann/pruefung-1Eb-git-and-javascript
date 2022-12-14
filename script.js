@@ -7,11 +7,13 @@ const circle2 = document.querySelector("#circ2")
 let running = false
 let v1 = 0
 let v2 = 0
-let digits = 1
+let digits = 5
 let m = 100**digits
-let repetitions = 1
+let repetitions = 10000
 let count = 0
 
+let textContent = displayNumber()
+//Die Nummer, die auf dem Display angezeigt wird, wird dann berechnet.
 function start() {
     running = true
     circle1.setAttribute("cx", 80)
@@ -30,9 +32,17 @@ function animationLoop() {
     let cx2 = parseFloat(circle2.getAttribute("cx"))     
 
     // Start Loop
-    if (false) { // Aufgabe (4b)
+    if (cx1 > cx + 10) { // Aufgabe (4b)
         ({v1, v2} = newVelocity(v1, v2))
     }
+
+    let upperBound = parseInt(read())
+    for ( let i = 0; i < repetitions; i++) {
+        print (i)
+    }
+
+    
+
 
     // Kommentiere hier (d)
     // Hier sagen Sie, dass cx1 cx1 plus v1 entspricht. D.h. dass sie dem cx eine neue Funktion geben und dass diese repetiert wird. Das selbe geschieht mit dem cx2.
@@ -50,6 +60,13 @@ function animationLoop() {
     // Hier sagen Sie, dass wen die Funktion running true(also richitg) ist, soll die Animation geloopt werden.
     if ( running === true ) {
         window.requestAnimationFrame(animationLoop)
+    }
+
+    if ( circle2 = 100 ) {
+        v2 = v2 * (-1)
+        count = count + 1
+
+
     }
 }
 
@@ -74,3 +91,12 @@ function requestAnimationFrame () {
         window.requestAnimationFrame(animationLoop)
     }
 }
+
+function count() {
+    if (circle1 == circle2) {
+        count = count + 1
+    }
+
+}
+
+
