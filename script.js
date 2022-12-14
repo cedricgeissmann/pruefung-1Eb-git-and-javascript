@@ -1,6 +1,6 @@
 
 // Kommentiere hier (b)
-// Hier werden 2 neue Variablen definiert. (Variablen mit const sind eigentlich Konstanten). Der Variable circle 1 wird
+// Hier werden 2 neue Variablen definiert / Element zugeordnet. (Variablen mit const sind eigentlich Konstanten). Der Variable circle 1 wird
 // das Element mit der id circ1 zugeordnet und der Variabel circle2 wird das Element mit der id circ2 zugeordnet. 
 //const bedeutet das es fix zugeordnet ist und man dieser Variable später kein Anderes Element / Wert zuweisen kann.
 const circle1 = document.querySelector("#circ1")
@@ -27,7 +27,8 @@ function start() {
 function animationLoop() {
     
     // Kommentiere hier (c)    
-    // 
+    // Hier wird den variablen ein Wert zugeordnet. Der Variable cx1 wird das attribut "cx" des Elements circle1 zugeordnet. Dieses attribut wird zufor durch parseFloat in eine Zahl (mit Komma stellen) umgewandelt. 
+    // bei cx2 geschieht das selbe mit dem "cx" attribut des Elements circle2.
     let cx1 = parseFloat(circle1.getAttribute("cx"))     
     let cx2 = parseFloat(circle2.getAttribute("cx"))     
 
