@@ -1,5 +1,5 @@
 
-// Kommentiere hier (b)
+// hier wird angezigt, welche Formen auf der Website zu sehen sind. (b)
 // 
 const circle1 = document.querySelector("#circ1")
 const circle2 = document.querySelector("#circ2")
@@ -24,7 +24,7 @@ function start() {
 
 function animationLoop() {
     
-    // Kommentiere hier (c)    
+    // Hier wird geschrieben, auf welcher Achse die Kreise sich bewegen sollen. (c)    
     // 
     let cx1 = parseFloat(circle1.getAttribute("cx"))     
     let cx2 = parseFloat(circle2.getAttribute("cx"))     
@@ -34,18 +34,18 @@ function animationLoop() {
         ({v1, v2} = newVelocity(v1, v2))
     }
 
-    // Kommentiere hier (d)
+    // Hier wird gesagt, dass sich die Kreise auf dieser Achse mit dieser Geschwindigkeit repetitiv bewegen (d)
     // 
     cx1 = cx1 + v1 / repetitions
     cx2 = cx2 + v2 / repetitions
 
     // End Loop
     
-    // Kommentiere hier (e)
+    // hier wird geschrieben, dass sich der Kreis cx1 auf der cx Achse bewegt und der cx2 ebenfalls (e)
     circle1.setAttribute("cx", cx1)
     circle2.setAttribute("cx", cx2)
 
-    // Kommentiere hier (f)
+    // wenn die animation wie beschrieben ausgeführt wird, wird die Animation wiederholt (f)
     // 
     if ( running === true ) {
         window.requestAnimationFrame(animationLoop)
