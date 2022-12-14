@@ -1,6 +1,8 @@
 
 // Kommentiere hier (b)
-// 
+// Hier werden 2 neue Variablen definiert. (Variablen mit const sind eigentlich Konstanten). Der Variable circle 1 wird
+// das Element mit der id circ1 zugeordnet und der Variabel circle2 wird das Element mit der id circ2 zugeordnet. 
+//const bedeutet das es fix zugeordnet ist und man dieser Variable später kein Anderes Element / Wert zuweisen kann.
 const circle1 = document.querySelector("#circ1")
 const circle2 = document.querySelector("#circ2")
 
