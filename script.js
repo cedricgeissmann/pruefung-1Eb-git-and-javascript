@@ -45,7 +45,7 @@ function animationLoop() {
     circle1.setAttribute("cx", cx1)
     circle2.setAttribute("cx", cx2)
 
-    // Kommentiere hier (f)
+    // wenn die animation wie beschrieben ausgeführt wird, wird die Animation wiederholt (f)
     // 
     if ( running === true ) {
         window.requestAnimationFrame(animationLoop)
