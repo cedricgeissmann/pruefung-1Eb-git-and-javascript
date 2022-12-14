@@ -45,8 +45,10 @@ function animationLoop() {
     // Start Loop
     if (cx1 > cx2 + 10) { // Aufgabe (4b)
         ({v1, v2} = newVelocity(v1, v2))
+    } if (cx1=== cx2) {
+        let count = count + 1
     }
-
+    
     // Kommentiere hier (d)
     // Lass cx1 zu cx1+v1 durch repetition; cx2 zu cx2+v2 durch repetition 
     cx1 = cx1 + v1 / repetitions
