@@ -24,7 +24,7 @@ function start() {
 
 
 function stop() {
-    running = true
+    running = false
     circle1.setAttribute("cx", 80)
     circle2.setAttribute("cx", 20)
     count = 0
