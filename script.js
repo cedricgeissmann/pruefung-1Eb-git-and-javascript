@@ -1,6 +1,6 @@
 
 // Kommentiere hier (b)
-// Zwei Variablen ("circle1" und "circle2") werden erstellt, in welchen jeweils eine ID ("#circ1" und "#circ2") abgespeichert wird.
+// Zwei Variablen ("circle1" und "circle2") werden erstellt, in welchen jeweils eine ID ("#circ1" und "#circ2") abgespeichert wird um zugriff auf die Attribute vom html-Code zu kriegen.
 const circle1 = document.querySelector("#circ1")
 const circle2 = document.querySelector("#circ2")
 
@@ -25,7 +25,7 @@ function start() {
 function animationLoop() {
     
     // Kommentiere hier (c)    
-    // 
+    // Zwei Variablen werden innerhalb einer Funktion erstellt. Von den Variablen "circle1" oder "circle2" wird jeweils die Attribute "cx" abgerufen, in eine rationale Zahl umschrieben und dann jeweils in den Variablen "cx1" und "cx2" abgespeichert.
     let cx1 = parseFloat(circle1.getAttribute("cx"))     
     let cx2 = parseFloat(circle2.getAttribute("cx"))     
 
