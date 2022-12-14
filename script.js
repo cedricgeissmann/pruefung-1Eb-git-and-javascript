@@ -37,7 +37,9 @@ function animationLoop() {
     }
 
     // Kommentiere hier (d)
-    // 
+    // In diesen Codezeilen passiert etwas sehr Elementares, denn hier werden die Werte für die zuvor ausgelesenen Variabeln
+    // cx1 und cx2 neu zugeordnet, da nun die jeweilige Variable gleich dem ausgelesenen Werte plus die jeweiligen dazukommenden Variablen (v1/v2) 
+    //dividiert durch die Konstante (repetitions) sind.
     cx1 = cx1 + v1 / repetitions
     cx2 = cx2 + v2 / repetitions
 
