@@ -44,6 +44,14 @@ function animationLoop() {
     cx1 = cx1 + v1 / repetitions
     cx2 = cx2 + v2 / repetitions
 
+
+    primes = [0,repetitions]
+
+    for (let i = 0; i <= repetitions; i++){
+        print (primes)
+    }
+  
+
     // End Loop
     
     // Kommentiere hier (e)
