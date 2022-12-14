@@ -42,6 +42,7 @@ function animationLoop() {
     // End Loop
     
     // Kommentiere hier (e)
+    // Die veränderten Werte von cx1 und cx2 werden nun wieder den Kreisen zugeordnet. Mit dem Befehl setAttribute wählt man ein gewisses Attribut eines Elementes aus und gibt den neuen Wert an, welches dieses Attribut kriegen sollte.
     circle1.setAttribute("cx", cx1)
     circle2.setAttribute("cx", cx2)
 
