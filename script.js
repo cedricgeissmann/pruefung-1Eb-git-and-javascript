@@ -12,6 +12,8 @@ let m = 100**digits
 let repetitions = 10000
 let count = 0
 
+let textContent = displayNumber()
+//Die Nummer, die auf dem Display angezeigt wird, wird dann berechnet.
 function start() {
     running = true
     circle1.setAttribute("cx", 80)
