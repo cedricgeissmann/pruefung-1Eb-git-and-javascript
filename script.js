@@ -1,6 +1,6 @@
 
 // Kommentiere hier (b)
-// 
+// Zwei Variablen ("circle1" und "circle2") werden erstellt, in welchen jeweils eine ID ("#circ1" und "#circ2") abgespeichert wird.
 const circle1 = document.querySelector("#circ1")
 const circle2 = document.querySelector("#circ2")
 
