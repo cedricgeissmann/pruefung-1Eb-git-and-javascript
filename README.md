@@ -1,3 +1,3 @@
 # Prüfung 1Eb
 
-Dies ist die Prüfung von Zoe Ochsner.
+Dies ist die Prüfung von Zoé Ochsner.
