@@ -42,6 +42,7 @@ function animationLoop() {
     // End Loop
     
     // Kommentiere hier (e)
+    //circle1 bekommt das attribut cx, dass cx1 enthält.
     circle1.setAttribute("cx", cx1)
     circle2.setAttribute("cx", cx2)
 
