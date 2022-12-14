@@ -41,7 +41,7 @@ function animationLoop() {
 
     // End Loop
     
-    // Kommentiere hier (e)
+    // Hier werden cx1 und cx2 wieder auf ihre ursprünglichen Werte gesetzt. Der zuvor neu hinzugefügte Wert wird wieder gelöscht.
     circle1.setAttribute("cx", cx1)
     circle2.setAttribute("cx", cx2)
 
