@@ -22,6 +22,19 @@ function start() {
     window.requestAnimationFrame(animationLoop)
 }
 
+
+function stop() {
+    running = false
+    circle1.setAttribute("cx", 80)
+    circle2.setAttribute("cx", 20)
+    count = 0
+    v1 = -1
+    v2 = 0
+    window.requestAnimationFrame(cx2 <= 95)
+    
+}
+
+
 function animationLoop() {
     
     // Kommentiere hier (c)    
