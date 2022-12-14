@@ -1,6 +1,6 @@
 
 // Kommentiere hier (b)
-// 
+// const bedeutet, dass es für alle circle1 und circle2 gilt. der queryselector sucht dann die richtige id aus dem html dokument aus.
 const circle1 = document.querySelector("#circ1")
 const circle2 = document.querySelector("#circ2")
 
