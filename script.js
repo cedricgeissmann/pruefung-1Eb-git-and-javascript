@@ -44,7 +44,7 @@ function animationLoop() {
 
     // End Loop
     
-    // Kommentiere hier (e)
+    // Kommentiere hier (e) das attribut "cx" des Elements circle1 wird auf den Wert cx1 gesetzt. Das gleiche passiert mit dem "cx" des circle2.
     circle1.setAttribute("cx", cx1)
     circle2.setAttribute("cx", cx2)
 
