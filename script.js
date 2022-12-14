@@ -25,7 +25,7 @@ function start() {
 function animationLoop() {
     
     // Kommentiere hier (c)    
-    // 
+    // Zuerst wird das Attribut "cx" von jeweils circle1 und circle2 ausgelesen. Mit parseFloat wird dies anschliessend in eine Zahl mit Dezimalstellen umgewandelt. Diese Zahl wird dann jeweils als Wert von cx1 und cx2 zugewiesen. Hier benutzt man parseFloat und nicht parseInt, damit man eine genauere Zahl bekommt. (parseInt ist eine ganze Zahl ohne Dezimalstellen).
     let cx1 = parseFloat(circle1.getAttribute("cx"))     
     let cx2 = parseFloat(circle2.getAttribute("cx"))     
 
