@@ -66,7 +66,10 @@ function animationLoop() {
         v1 = v1*(-1)
         count = count + 1
     }
+    function aufgabe_4e(){
+        for (0 < repetitions)
 }
+
 
 
 function newVelocity(v1, v2) {
