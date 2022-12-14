@@ -45,7 +45,7 @@ function animationLoop() {
     circle1.setAttribute("cx", cx1)
     circle2.setAttribute("cx", cx2)
 
-    // Kommentiere hier (f)
+    // Wenn der running-Wert nun stimmt (true ist, anstatt wie ganz am Anfang falsch), dann wird die Animation wieder neu gestartet. Also das Fenster in dem sie ist wird wieder geöffnet.
     // 
     if ( running === true ) {
         window.requestAnimationFrame(animationLoop)
