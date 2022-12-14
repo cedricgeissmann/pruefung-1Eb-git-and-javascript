@@ -24,7 +24,9 @@ function start() {
 
 function stop() {
     running = false
-    window.requestAnimationFrame( cx2 <=95) 
+    if (cx2 <= 95){
+    window.requestAnimationFrame(animationLoop)
+    }
 }
 
 function animationLoop() {
