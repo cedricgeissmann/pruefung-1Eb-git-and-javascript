@@ -81,6 +81,11 @@ function newVelocity(v1, v2) {
         v1: (m * v1 + (2 * v2 - v1)) / (m + 1),
         v2: (v2 + m * (2 * v1 - v2)) / (m + 1)
     }
+
+    if  circ2 touches left border 
+    let num v2= -num + count= +1 
+
+    }
 }
 
 function displayNumber(#zahl) {
