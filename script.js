@@ -1,5 +1,5 @@
 
-// Kommentiere hier (b)
+// hier wird angezigt, welche Formen auf der Website zu sehen sind. (b)
 // 
 const circle1 = document.querySelector("#circ1")
 const circle2 = document.querySelector("#circ2")
