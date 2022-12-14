@@ -30,6 +30,9 @@ function animationLoop() {
     let cx2 = parseFloat(circle2.getAttribute("cx"))     
 
     // Start Loop
+
+    for (let i = 0; i === repetitions; i++) {
+
     if (cx1 > cx2 + 10) { // Aufgabe (4b)
         ({v1, v2} = newVelocity(v1, v2))
     }
@@ -38,6 +41,8 @@ function animationLoop() {
     // In der Variable "cx1" wird der aktuelle Wert von sich selber plus der Wert von "v1" durch den Wert der Variablen "repetitions" abgespeichert. Das gleiche gilt für "cx2" mit "v2" statt "v1".
     cx1 = cx1 + v1 / repetitions
     cx2 = cx2 + v2 / repetitions
+
+    }
 
     // End Loop
     
