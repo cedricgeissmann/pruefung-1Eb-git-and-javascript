@@ -1,5 +1,5 @@
 
-// Kommentiere hier (b)
+// Es werden die zwei svg Kreise aus dem HTML geholt und ihnen wirden die Konstanten circle1 und circle2 gegeben. Mit dem # wird diee ID angegeben. Nun kann man im Javascript mit den zwei Konstanten an den Kreisen arbeiten   
 // 
 const circle1 = document.querySelector("#circ1")
 const circle2 = document.querySelector("#circ2")
