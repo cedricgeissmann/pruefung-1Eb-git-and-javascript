@@ -52,12 +52,22 @@ function animationLoop() {
     if (cx1 ===  cx1 > cx2 + 10) { // Aufgabe (4b)
         ({v1, v2} = newVelocity(v1, v2))
     }
+    let upperBound = parseInt(read())
 
-    // Kommentiere hier (d)
-    // eine neue Bedingung wird für das Attribute cx1 und cx2 wird bestimmt.
-    cx1 = cx1 + v1 / repetitions
-    cx2 = cx2 + v2 / repetitions
+    for  (let i = 0; i = repetition) {
 
+        print(i)
+
+ 
+
+        
+        
+        // Kommentiere hier (d)
+        // eine neue Bedingung wird für das Attribute cx1 und cx2 wird bestimmt.
+        cx1 = cx1 + v1 / repetitions
+        cx2 = cx2 + v2 / repetitions
+        
+    }
     // End Loop
     
     // Kommentiere hier (e)
