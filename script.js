@@ -29,23 +29,27 @@ function animationLoop() {
     let cx1 = parseFloat(circle1.getAttribute("cx"))     
     let cx2 = parseFloat(circle2.getAttribute("cx"))     
 
-    // Start Loop
-    if (cx1 > cx2 + 10) { // Aufgabe (4b)
+    if (cx2 <= 5) {
+        v2 = v2 * (-1)
+        count++}
+    
+        // Start Loop
+    
+    for (i=0; i >= repetitions; i++){
+        if (cx1 > cx2 + 10) { // Aufgabe (4b)
         ({v1, v2} = newVelocity(v1, v2))
     count++
     }
-if (cx2 <= 5) {
-v2 = v2 * (-1)
-count++
 
-}
+
+
     // Kommentiere hier (d)
     // Der Wert von cx1 und cx2 wird hier verändert, indem man den Wert von v1 zu cx1 addiert und den Wert von v2 zu cx2 addiert. Damit erhöht man die x koordinate der Kreise exponentiell, da der Wert von v1 und v2 bei jedem Schleifendurchlauf grösser wird. Somit bewegen sich beide Kreise nach unten, mit einer immer höher werdenden Geschwindigkeit. Ebenfalls wird die Zahl zum schluss durch den Wert "repetitions" dividiert, also durch 1 --> ändert nichts am Code.
     cx1 = cx1 + v1 / repetitions
     cx2 = cx2 + v2 / repetitions
 
     // End Loop
-    
+}
     // Kommentiere hier (e)
     // Die veränderten Werte von cx1 und cx2 werden nun wieder den Kreisen zugeordnet. Mit dem Befehl setAttribute wählt man ein gewisses Attribut eines Elementes aus und gibt den neuen Wert an, welches dieses Attribut kriegen sollte.
     circle1.setAttribute("cx", cx1)
