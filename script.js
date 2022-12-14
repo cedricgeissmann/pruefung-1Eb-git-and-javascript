@@ -76,6 +76,7 @@ function newVelocity(v1, v2) {
 
 function displayNumber() {
     return (count / 10**digits).toFixed(digits)
+
 }
 
 function stop(){
@@ -97,7 +98,7 @@ function count(){
 
 function circ2(){
     if (cx2 = 100){
-        v1 * (-1)
+        v2 * (-1)
         count = count +1
     }
 }
