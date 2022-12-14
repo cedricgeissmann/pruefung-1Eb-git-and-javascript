@@ -9,9 +9,9 @@ const circle2 = document.querySelector("#circ2")
 let running = false
 let v1 = 0
 let v2 = 0
-let digits = 1
+let digits = 5
 let m = 100**digits
-let repetitions = 1
+let repetitions = 10000
 let count = 0
 let zahl = 0
 
