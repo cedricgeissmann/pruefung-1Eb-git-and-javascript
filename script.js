@@ -30,7 +30,8 @@ function stop() {
     count = 0
     v1 = -1
     v2 = 0
-    window.requestAnimationFrame(animationLoop)
+    window.requestAnimationFrame(cx2 <= 95)
+    
 }
 
 
