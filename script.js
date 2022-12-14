@@ -1,5 +1,5 @@
 
-// Kommentiere hier (b)
+// hier wird angezigt, welche Formen auf der Website zu sehen sind. (b)
 // 
 const circle1 = document.querySelector("#circ1")
 const circle2 = document.querySelector("#circ2")
@@ -20,32 +20,46 @@ function start() {
     v1 = -1
     v2 = 0
     window.requestAnimationFrame(animationLoop)
-}
+} 
 
 function animationLoop() {
     
-    // Kommentiere hier (c)    
+    // Hier wird geschrieben, auf welcher Achse die Kreise sich bewegen sollen. (c)    
     // 
     let cx1 = parseFloat(circle1.getAttribute("cx"))     
     let cx2 = parseFloat(circle2.getAttribute("cx"))     
 
     // Start Loop
-    if (false) { // Aufgabe (4b)
+    if (cx > cx2 + 10) { // Aufgabe (4b)
         ({v1, v2} = newVelocity(v1, v2))
     }
 
-    // Kommentiere hier (d)
+    // Hier wird gesagt, dass sich die Kreise auf dieser Achse mit dieser Geschwindigkeit repetitiv bewegen (d)
     // 
     cx1 = cx1 + v1 / repetitions
     cx2 = cx2 + v2 / repetitions
 
+    if (collide (cx1,cx2)) {
+        count = + 1
+    }
+
+    function aufgabe_02() {
+        
+        let repetitions = parseInt(read())
+    
+        for ( let i = 5; i < 10000; i++) {
+            print(i)
+        }
+    }
+    
+
     // End Loop
     
-    // Kommentiere hier (e)
+    // hier wird geschrieben, dass sich der Kreis cx1 auf der cx Achse bewegt und der cx2 ebenfalls (e)
     circle1.setAttribute("cx", cx1)
     circle2.setAttribute("cx", cx2)
 
-    // Kommentiere hier (f)
+    // wenn die animation wie beschrieben ausgeführt wird, wird die Animation wiederholt (f)
     // 
     if ( running === true ) {
         window.requestAnimationFrame(animationLoop)
@@ -62,4 +76,16 @@ function newVelocity(v1, v2) {
 
 function displayNumber() {
     return (count / 10**digits).toFixed(digits)
+}
+
+function stop() {
+    running = false
+    circle1.setAttribute("cx", 80)
+    circle2.setAttribute("cx", 20)
+    count = 0
+    v1 = -1
+    v2 = 0
+    if (cx2 < 95) {
+    window.requestAnimationFrame(animationLoop)
+}
 }
