@@ -11,6 +11,7 @@ let digits = 5
 let m = 100**digits
 let repetitions = 10000
 let count = 0
+let textContent(#zahl)=displayNumber()
 
 function start(START) {
     running = true
