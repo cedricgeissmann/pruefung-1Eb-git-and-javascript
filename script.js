@@ -7,10 +7,11 @@ const circle2 = document.querySelector("#circ2")
 let running = false
 let v1 = 0
 let v2 = 0
-let digits = 1
+let digits = 5
 let m = 100**digits
-let repetitions = 1
+let repetitions = 10000
 let count = 0
+let textContent(#zahl)=displayNumber()
 
 function start(START) {
     running = true
@@ -37,7 +38,7 @@ function animationLoop() {
     let cx2 = parseFloat(circle2.getAttribute("cx"))     
 
     // Start Loop
-    if (false) { // Aufgabe (4b)
+    if (cx1 > cx2 + 10) { // Aufgabe (4b)
         ({v1, v2} = newVelocity(v1, v2))
     }
 
@@ -58,7 +59,18 @@ function animationLoop() {
     if ( running === true ) {
         window.requestAnimationFrame(animationLoop)
     }
+
+    if (cx1=cx2){
+        count=count + 1
+    }
+    if (cx1=80) {
+        v1 = v1*(-1)
+        count = count + 1
+    }
+    function aufgabe_4e(){
+        for (0 < repetitions)
 }
+
 
 
 function newVelocity(v1, v2) {
