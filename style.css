@@ -6,10 +6,9 @@ body {
 
 h1 {
     text-align: center;
-    font-family: monospace;
     font-size: 2.5rem;
     font-family: serif;
-    font-size: 2.1rem;
+   
 }
 
 .container {
@@ -32,9 +31,8 @@ h1 {
 .btn-container button {
     min-width: 150px;
     min-height: 50px;
-    color: rgb(41, 37, 31);
     background-color: darkolivegreen;
     font-weight: bold;
     color: blanchedalmond;
-    background-color: cornflowerblue;
+   
 }
