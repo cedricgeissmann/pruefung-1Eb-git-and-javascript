@@ -41,7 +41,7 @@ function animationLoop() {
 
     // End Loop
     
-    // Kommentiere hier (e)
+    // hier wird geschrieben, dass sich der Kreis cx1 auf der cx Achse bewegt und der cx2 ebenfalls (e)
     circle1.setAttribute("cx", cx1)
     circle2.setAttribute("cx", cx2)
 
