@@ -1,6 +1,6 @@
 
 // Kommentiere hier (b)
-// 
+// Der Kreis1 soll immer konstant bleiben und sucht  die Id--> circ1 im html.
 const circle1 = document.querySelector("#circ1")
 const circle2 = document.querySelector("#circ2")
 
@@ -25,7 +25,7 @@ function start() {
 function animationLoop() {
     
     // Kommentiere hier (c)    
-    // 
+    // suche cx, alle zahlen auch mit Kommastellen und speichere das im cx1.
     let cx1 = parseFloat(circle1.getAttribute("cx"))     
     let cx2 = parseFloat(circle2.getAttribute("cx"))     
 
@@ -35,18 +35,19 @@ function animationLoop() {
     }
 
     // Kommentiere hier (d)
-    // 
+    // cx1 + v1 durch die Anzahl Durchläufe soll in cx1 gespeichert werden
     cx1 = cx1 + v1 / repetitions
     cx2 = cx2 + v2 / repetitions
 
     // End Loop
     
     // Kommentiere hier (e)
+    circle1 soll cx auf cx1 setzen
     circle1.setAttribute("cx", cx1)
     circle2.setAttribute("cx", cx2)
 
     // Kommentiere hier (f)
-    // 
+    // Fals running den geleichen Wert und Typ haben, und dies wahr ist, soll es im Window mit dem AnimationFrame den AnimationLoop anfragen.
     if ( running === true ) {
         window.requestAnimationFrame(animationLoop)
     }
