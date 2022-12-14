@@ -31,7 +31,7 @@ function animationLoop() {
 
     // Start Loop
 
-    for (let i = 0; i === repetitions; i++) {
+    for (digits = 5, repetitions = 10000 ; digits === repetitions; i++) {
 
     if (cx1 > cx2 + 10) { // Aufgabe (4b)
         ({v1, v2} = newVelocity(v1, v2))
