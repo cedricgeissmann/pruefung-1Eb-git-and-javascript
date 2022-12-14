@@ -42,6 +42,7 @@ function animationLoop() {
     // End Loop
     
     // Kommentiere hier (e)
+    // Der Wert von "cx" bei circle1 wird mit dem Wert von der Variablen "cx1" überschrieben und das gleiche passiert mit dem Wert "cx" beim circle2 mit der Variablen "cx2".
     circle1.setAttribute("cx", cx1)
     circle2.setAttribute("cx", cx2)
 
