@@ -58,6 +58,10 @@ function animationLoop() {
     if ( running === true ) {
         window.requestAnimationFrame(animationLoop)
     }
+
+    if (cx1=cx2){
+        count=count + 1
+    }
 }
 
 
