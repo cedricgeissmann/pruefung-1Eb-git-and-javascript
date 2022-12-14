@@ -54,7 +54,7 @@ function animationLoop() {
     }
     let upperBound = parseInt(read())
 
-    for  (let i = 0; i = repetition) {
+    for  (let i = 0; i; repetition) {
 
         print(i)
 
