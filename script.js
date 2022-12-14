@@ -39,6 +39,10 @@ function animationLoop() {
     cx1 = cx1 + v1 / repetitions
     cx2 = cx2 + v2 / repetitions
 
+    if (collide (cx1,cx2)) {
+        count = + 1
+    }
+
     // End Loop
     
     // hier wird geschrieben, dass sich der Kreis cx1 auf der cx Achse bewegt und der cx2 ebenfalls (e)
