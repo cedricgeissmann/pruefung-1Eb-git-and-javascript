@@ -35,7 +35,7 @@ function animationLoop() {
     }
 
     // Kommentiere hier (d)
-    // 
+    // In der Variable "cx1" wird der aktuelle Wert von sich selber plus der Wert von "v1" durch den Wert der Variablen "repetitions" abgespeichert. Das gleiche gilt für "cx2" mit "v2" statt "v1".
     cx1 = cx1 + v1 / repetitions
     cx2 = cx2 + v2 / repetitions
 
