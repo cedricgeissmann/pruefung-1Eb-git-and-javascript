@@ -47,7 +47,7 @@ function animationLoop() {
     circle2.setAttribute("cx", cx2)
 
     // Kommentiere hier (f)
-    // 
+    // wenn das Rennen richtig ist wird animationLoop angefragt
     if ( running === true ) {
         window.requestAnimationFrame(animationLoop)
     }
