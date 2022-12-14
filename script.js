@@ -26,7 +26,8 @@ function start() {
 function animationLoop() {
     
     // Kommentiere hier (c)    
-    // 
+    // Mit diesen Codezeilen werden jeweils die Variabeln cx1 und cx2 einem gewissen Zahlenwert (cx Werte der Kreise) durch 
+    //den Zuweisungsoperator zugeordnet. ParseFloat ermöglicht dabei die Zuweisung eines ganz klaren Zahlenwertes!
     let cx1 = parseFloat(circle1.getAttribute("cx"))     
     let cx2 = parseFloat(circle2.getAttribute("cx"))     
 
