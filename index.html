@@ -12,9 +12,13 @@
 </head>
 
 <body>
-    <h1>Misteriöse Zahl: <span id="zahl"></span> </h1>
+    <h1>Misteriöse Zahl: <span id="displayNumber"></span> </h1>
     <div class="btn-container">
-        <button>START</button>
+        <button onclick="start()">START</button>
+        <button onclick="stop()">STOP</button>
+        <button onclick="zählschleife()">Zählschleife</button>
+
+
     </div>
     <div class="container">
         <svg id="svg-field" height="100" width="100" viewBox="0 0 100 100">

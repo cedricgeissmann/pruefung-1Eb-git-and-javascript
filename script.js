@@ -1,15 +1,15 @@
 
 // Kommentiere hier (b)
-// 
+// circ1 & circ2 sollen gelesen werden
 const circle1 = document.querySelector("#circ1")
 const circle2 = document.querySelector("#circ2")
 
 let running = false
 let v1 = 0
 let v2 = 0
-let digits = 1
+let digits = 5
 let m = 100**digits
-let repetitions = 1
+let repetitions = 10000
 let count = 0
 
 function start() {
@@ -22,31 +22,57 @@ function start() {
     window.requestAnimationFrame(animationLoop)
 }
 
+
+function stop() {
+    running = false
+    circle1.setAttribute("cx", 80)
+    circle2.setAttribute("cx", 20)
+    count = 0
+    v1 = -1
+    v2 = 0
+    window.requestAnimationFrame(cx2 <= 95)
+    
+}
+
+
+
+
 function animationLoop() {
     
     // Kommentiere hier (c)    
-    // 
+    // verändere das attribute cx in cx1 bzw cx2 
     let cx1 = parseFloat(circle1.getAttribute("cx"))     
     let cx2 = parseFloat(circle2.getAttribute("cx"))     
 
     // Start Loop
-    if (false) { // Aufgabe (4b)
-        ({v1, v2} = newVelocity(v1, v2))
+    function zählschleife() { 
+            for(let i=0; i <= repetitions; i++ ){
+                    
+            }
+        
+        if (cx1 > cx2 + 10) { // Aufgabe (4b)
+           ({v1, v2} = newVelocity(v1, v2))
+        } if (cx1=== cx2) {
+            let count = count + 1
+         } else if (cx1 === 0) {
+          v1 *-1 
+         count +1
+         }
+    
+        // Kommentiere hier (d)
+        // Lass cx1 zu cx1+v1 durch repetition; cx2 zu cx2+v2 durch repetition 
+        cx1 = cx1 + v1 / repetitions
+     cx2 = cx2 + v2 / repetitions
     }
-
-    // Kommentiere hier (d)
-    // 
-    cx1 = cx1 + v1 / repetitions
-    cx2 = cx2 + v2 / repetitions
-
     // End Loop
     
     // Kommentiere hier (e)
+    // circle1 wird von cx zu cx1 und circle 2 von cx zu cx2
     circle1.setAttribute("cx", cx1)
     circle2.setAttribute("cx", cx2)
 
     // Kommentiere hier (f)
-    // 
+    // wenn das Rennen richtig ist, wird das Fenster angefragt eine AnimationLoop zu machen
     if ( running === true ) {
         window.requestAnimationFrame(animationLoop)
     }
