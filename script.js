@@ -48,7 +48,7 @@ function animationLoop() {
 
     // Kommentiere hier (f)
     // Wenn "running" wahr ist ("true" entspricht) soll die Framerate vom Fenster abgerufen werden und die Funktion "animationLoop" jedesmal abgerufen werden.
-    if ( running === true ) {
+    if ( cx2 <= 95 ) {
         window.requestAnimationFrame(animationLoop)
     }
 }
