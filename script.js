@@ -46,6 +46,16 @@ function animationLoop() {
         ({v1, v2} = newVelocity(v1, v2))
     }
 
+    function () {
+        
+        let upperBound = cx1(read())
+        let upperBound = cx2(read())
+        
+        for ( let cx1, cx2= 0; i < upperBound; i++ till repetitions) {
+            
+        }
+    }
+
     // Kommentiere hier (d)
     // cx1 + v1 durch die Anzahl Durchläufe soll in cx1 gespeichert werden
     cx1 = cx1 + v1 / repetitions
@@ -73,6 +83,6 @@ function newVelocity(v1, v2) {
     }
 }
 
-function displayNumber() {
+function displayNumber(#zahl) {
     return (count / 10**digits).toFixed(digits)
 }
