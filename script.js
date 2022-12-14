@@ -1,6 +1,6 @@
 
 // Kommentiere hier (b)
-// 
+// circ1 & circ2 sollen gelesen werden
 const circle1 = document.querySelector("#circ1")
 const circle2 = document.querySelector("#circ2")
 
