@@ -13,7 +13,7 @@ let digits = 5
 let m = 100**digits
 let repetitions = 10000
 let count = 0
-
+// es wird anzahl kreise pro start punkt berechenet und angezeigt.
 function start() {
     running = true
     circle1.setAttribute("cx", 80)
