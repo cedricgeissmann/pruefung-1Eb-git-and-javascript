@@ -42,6 +42,7 @@ function animationLoop() {
     // End Loop
     
     // Kommentiere hier (e)
+    // hier wird der Kreis mit seinen neuen Attribut-Werten/Bedingungen gesetzt.
     circle1.setAttribute("cx", cx1)
     circle2.setAttribute("cx", cx2)
 
