@@ -46,6 +46,16 @@ function animationLoop() {
         ({v1, v2} = newVelocity(v1, v2))
     }
 
+
+    
+       
+        let repetitions = parseInt(read())
+    
+        
+        for ( let i = 0; i <= repetitions; i++) {
+            print(i)
+        }
+
     // Kommentiere hier (d)
     // hier wird gezeigt das nach jedem button druck die velocytie beschleunigt & wiederholt wird 
     cx1 = cx1 + v1 / repetitions
