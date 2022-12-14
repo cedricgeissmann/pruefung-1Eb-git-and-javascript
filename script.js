@@ -38,7 +38,7 @@ function animationLoop() {
     }
 
     // Kommentiere hier (d)
-    // 
+    // hier wird gezeigt das nach jedem button druck die velocytie beschleunigt & wiederholt wird 
     cx1 = cx1 + v1 / repetitions
     cx2 = cx2 + v2 / repetitions
 
