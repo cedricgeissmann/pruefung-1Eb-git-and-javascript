@@ -13,6 +13,7 @@ let digits = 1
 let m = 100**digits
 let repetitions = 1
 let count = 0
+let zahl = 0
 
 function start() {
     running = true
@@ -33,7 +34,7 @@ function animationLoop() {
     let cx1 = parseFloat(circle1.getAttribute("cx"))     
     let cx2 = parseFloat(circle2.getAttribute("cx"))     
 
-    // Start Loop
+    for(zahl = 0; zahl === 100; 1++){
     if (cx1 > cx2 + 10) { // Aufgabe (4b)
         ({v1, v2} = newVelocity(v1, v2))
     }
@@ -43,7 +44,7 @@ function animationLoop() {
     cx1 = cx1 + v1 / repetitions
     cx2 = cx2 + v2 / repetitions
 
-    // End Loop
+    }   // End Loop
     
     // Kommentiere hier (e) das attribut "cx" des Elements circle1 wird auf den Wert cx1 gesetzt. Das gleiche passiert mit dem "cx" des circle2.
     circle1.setAttribute("cx", cx1)
@@ -75,6 +76,11 @@ function stop() {
     running = false
 }
 
-if (circle1.cx + 10 === circle2.cx - 10) {
+if (circle1.cx + 5 === circle2.cx - 5) {
+    count = count + 1
+}
+
+if (circle2.cx === 5) {
+    v2 = v2*-1
     count = count + 1
 }
