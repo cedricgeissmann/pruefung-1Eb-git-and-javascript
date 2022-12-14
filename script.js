@@ -45,6 +45,7 @@ function animationLoop() {
     // End Loop
     
     // Kommentiere hier (e)
+    //hier wird gesagt das cx un cx1/c2 immer zussammen ausgelöst werden.
 
     circle1.setAttribute("cx", cx1)
     circle2.setAttribute("cx", cx2)
