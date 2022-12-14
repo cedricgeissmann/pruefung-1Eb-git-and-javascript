@@ -34,7 +34,7 @@ function animationLoop() {
         ({v1, v2} = newVelocity(v1, v2))
     }
 
-    // Kommentiere hier (d)
+    // Hier wird gesagt, dass sich die Kreise auf dieser Achse mit dieser Geschwindigkeit repetitiv bewegen (d)
     // 
     cx1 = cx1 + v1 / repetitions
     cx2 = cx2 + v2 / repetitions
