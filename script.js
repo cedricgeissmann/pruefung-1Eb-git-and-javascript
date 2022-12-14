@@ -1,3 +1,6 @@
+count = 0;
+
+
 
 // Kommentiere hier (b)
 // hier werden die zwei kreise welche auf der webseite zu sehen sind verlinkt.
@@ -24,7 +27,9 @@ function start() {
 
 function stop() {
     running = false
-    window.requestAnimationFrame( cx2 <=95) 
+    if (cx2 <= 95){
+    window.requestAnimationFrame(animationLoop)
+    }
 }
 
 function animationLoop() {
@@ -35,7 +40,7 @@ function animationLoop() {
     let cx2 = parseFloat(circle2.getAttribute("cx"))     
 
     // Start Loop
-    if (false) { // Aufgabe (4b)
+    if (cx1 > cx2 + 10 ) { // Aufgabe (4b)
         ({v1, v2} = newVelocity(v1, v2))
     }
 
@@ -55,8 +60,16 @@ function animationLoop() {
     if ( running === true ) {
         window.requestAnimationFrame(animationLoop)
     }
+
+    if (cx1 (Touch = boder) ) {
+        v2 = v2* (-1)
+        counter = counter + 1
+    }
 }
 
+if (cx1, cx2, colide){
+    counter = counter +1
+}
 
 function newVelocity(v1, v2) {
     return {
@@ -67,4 +80,11 @@ function newVelocity(v1, v2) {
 
 function displayNumber() {
     return (count / 10**digits).toFixed(digits)
+}
+
+function Zählerschleife() {
+
+let repetitions= parseInt(rad())
+    for (let i= 5; i < 10000; i++) {
+}
 }
