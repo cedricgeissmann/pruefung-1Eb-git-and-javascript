@@ -34,6 +34,12 @@ function animationLoop() {
         ({v1, v2} = newVelocity(v1, v2))
     }
 
+
+    // Wenn cx1 und cx2 kollidieren, also den glichen cx Wert haben, dann soll der count um 1 höher schalten.
+    if (cx1 = cx2) {
+        count = count + 1
+    }
+
     // cx1 und cx2 erhalten einen neuen Wert. Zu ihnen wird eine Geschwindigkeit hinzugerechent und dann noch durch die Anzahl Wiederholungen geteilt. 
     // 
     cx1 = cx1 + v1 / repetitions
