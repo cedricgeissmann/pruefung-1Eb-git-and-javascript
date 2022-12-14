@@ -23,6 +23,13 @@ function start() {
     window.requestAnimationFrame(animationLoop)
 }
 
+function stop() {
+
+    running = false}
+
+
+
+
 function animationLoop() {
     
     // Kommentiere hier (c)    
@@ -56,7 +63,7 @@ function animationLoop() {
     // Die Bedingung if (running===true) überprüft ob die Bedingung gegeben ist (Wenn sie einmal durch start() gegeben ist, ist sie
     //dauerhaft gegeben und die darauf folgende Funktion wird ausgeführt, welche das Performing einer neuen Animation wünscht, durch was
     //die Funktion animationLoop() ausgeführt wird. Folge dessen ist eine sich immer wieder wiederholende Schleife das Resultat!)
-    if ( running === true ) {
+    if ( running === true && cx2 <= 95 ) {
         window.requestAnimationFrame(animationLoop)
     }
 }
