@@ -11,6 +11,7 @@ let digits = 1
 let m = 100**digits
 let repetitions = 1
 let count = 0
+let textcontent = Element.textContent("#Zahl")
 
 function start() {
     running = true
@@ -75,7 +76,7 @@ function newVelocity(v1, v2) {
     }
 }
 
-function displayNumber() {
+function displayNumber(textcontent) {
     return (count / 10**digits).toFixed(digits)
 }
 
