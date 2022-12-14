@@ -38,7 +38,7 @@ function animationLoop() {
     }
 
     // Kommentiere hier (d)
-    // 
+    // Hier wird cx1 ein neuer wert zugeordnet, das ist möglich weil es let und nicht const ist. Der neue Wert entspricht dem alten cx plus dem Wert v1 der zufor noch durch den Wert von repetitions geteilt wird. Mit cx2 passiert das gleiche einfach mit anderen Werten.
     cx1 = cx1 + v1 / repetitions
     cx2 = cx2 + v2 / repetitions
 
