@@ -34,6 +34,14 @@ function animationLoop() {
         ({v1, v2} = newVelocity(v1, v2))
     }
 
+    let upperBound = parseInt(read())
+    for ( let i = 0; i < repetitions; i++) {
+        print (i)
+    }
+
+    
+
+
     // Kommentiere hier (d)
     // Hier sagen Sie, dass cx1 cx1 plus v1 entspricht. D.h. dass sie dem cx eine neue Funktion geben und dass diese repetiert wird. Das selbe geschieht mit dem cx2.
     cx1 = cx1 + v1 / repetitions
@@ -53,7 +61,7 @@ function animationLoop() {
     }
 
     if ( circle2 = 100 ) {
-        v1 = v1 * (-1)
+        v2 = v2 * (-1)
         count = count + 1
 
 
