@@ -74,3 +74,10 @@ function requestAnimationFrame () {
         window.requestAnimationFrame(animationLoop)
     }
 }
+
+function count() {
+    if (circle1 == circle2) {
+        count = count + 1
+    }
+
+}
