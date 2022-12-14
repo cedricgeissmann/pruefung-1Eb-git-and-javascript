@@ -35,7 +35,7 @@ function animationLoop() {
     }
 
     // Kommentiere hier (d)
-    // 
+    // Wenn die Funktion falsch is erhalten v1 und v2 eine neue Geschwindigkeit
     cx1 = cx1 + v1 / repetitions
     cx2 = cx2 + v2 / repetitions
 
