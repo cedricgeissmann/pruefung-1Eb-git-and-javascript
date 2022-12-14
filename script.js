@@ -64,3 +64,13 @@ function newVelocity(v1, v2) {
 function displayNumber() {
     return (count / 10**digits).toFixed(digits)
 }
+
+function STOP() {
+    running = false
+}
+
+function requestAnimationFrame () {
+    if (cx2 <= 95) {
+        window.requestAnimationFrame(animationLoop)
+    }
+}
