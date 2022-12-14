@@ -1,6 +1,6 @@
 
 // Kommentiere hier (b)
-// 
+// Es werden konstante Elemente namens "circle1" und "circle2" erstellt, welchen jeweils die Werte von dem ersten Element im Dokument mit der ID "#circ1" und "#circ2" zugeschrieben werden. Da es ein kosntantes Element ist, kann der Wert im nachhinein nicht verändert werden.
 const circle1 = document.querySelector("#circ1")
 const circle2 = document.querySelector("#circ2")
 
