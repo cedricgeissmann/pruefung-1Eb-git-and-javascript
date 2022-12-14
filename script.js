@@ -24,7 +24,7 @@ function start() {
 
 function animationLoop() {
     
-    // Kommentiere hier (c)    
+    // cx1 und cx2 erhalten ein Attribut, also wofüt sie stehen(was aus dem svg sie darstellen). Zuerst wird noch angegeben, dass sie eine Kommazahl darstellen können(parseFloat).    
     // 
     let cx1 = parseFloat(circle1.getAttribute("cx"))     
     let cx2 = parseFloat(circle2.getAttribute("cx"))     
