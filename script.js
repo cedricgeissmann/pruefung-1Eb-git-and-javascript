@@ -35,7 +35,7 @@ function animationLoop() {
     }
 
     // Kommentiere hier (d)
-    // 
+    // Der Wert von cx1 und cx2 wird hier verändert, indem man den Wert von v1 zu cx1 addiert und den Wert von v2 zu cx2 addiert. Damit erhöht man die x koordinate der Kreise exponentiell, da der Wert von v1 und v2 bei jedem Schleifendurchlauf grösser wird. Somit bewegen sich beide Kreise nach unten, mit einer immer höher werdenden Geschwindigkeit. Ebenfalls wird die Zahl zum schluss durch den Wert "repetitions" dividiert, also durch 1 --> ändert nichts am Code.
     cx1 = cx1 + v1 / repetitions
     cx2 = cx2 + v2 / repetitions
 
