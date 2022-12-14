@@ -39,7 +39,7 @@ function animationLoop() {
     // Start Loop
     if (cx1>cx2+10) { // Aufgabe (4b)
         ({v1, v2} = newVelocity(v1, v2))
-        
+        count = count + 1
     }
 
     // Kommentiere hier (d)
