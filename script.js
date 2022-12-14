@@ -23,7 +23,7 @@ function start(Start) {
 }
 
 function stop(STOP) {
-    
+    running = false
 }
 
 function animationLoop() {
