@@ -41,7 +41,7 @@ function animationLoop() {
 
     // End Loop
     
-    // Kommentiere hier (e)
+    // Hier werden Attribute gesetzt (e)
     circle1.setAttribute("cx", cx1)
     circle2.setAttribute("cx", cx2)
 
