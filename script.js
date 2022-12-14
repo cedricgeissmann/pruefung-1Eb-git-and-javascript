@@ -59,6 +59,11 @@ function animationLoop() {
     if ( running === true ) {
         window.requestAnimationFrame(animationLoop)
     }
+
+    if (cx1 Touch border ) {
+        v2 = v2* (-1)
+        counter = counter + 1
+    }
 }
 
 if (cx1, cx2, colide){
