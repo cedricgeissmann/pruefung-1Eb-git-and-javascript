@@ -84,3 +84,4 @@ running = false
 
 let zahl = document.querySelector("#zahl")
 zahl.textContent = displayNumber()
+// Der Count der bei jedem Zusammenknallen der Kreise oder beim an den Rand knallen der Kreise hochgeht, wird hier durch 10 gerechnet.
