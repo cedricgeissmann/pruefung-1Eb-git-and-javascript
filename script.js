@@ -65,5 +65,5 @@ function displayNumber() {
 }
 
 function stop() {
-    
+    return (running === false)
 }
