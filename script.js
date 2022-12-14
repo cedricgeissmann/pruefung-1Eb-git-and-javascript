@@ -51,6 +51,10 @@ function animationLoop() {
     if ( cx2 <= 95 ) {
         window.requestAnimationFrame(animationLoop)
     }
+
+    if (cx2 + 5 === cx1 - 5 ) {
+    count = count++
+    }
 }
 
 
