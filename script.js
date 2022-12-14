@@ -20,7 +20,7 @@ function start() {
     v1 = -1
     v2 = 0
     window.requestAnimationFrame(animationLoop)
-}
+} 
 
 function animationLoop() {
     
