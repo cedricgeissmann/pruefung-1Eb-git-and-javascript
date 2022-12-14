@@ -1,3 +1,5 @@
+count = 0;
+
 
 // Kommentiere hier (b)
 // hier werden die zwei kreise welche auf der webseite zu sehen sind verlinkt.
@@ -59,6 +61,9 @@ function animationLoop() {
     }
 }
 
+if (cx1, cx2, colide){
+    counter = counter +1
+}
 
 function newVelocity(v1, v2) {
     return {
