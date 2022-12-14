@@ -30,7 +30,7 @@ function animationLoop() {
     let cx2 = parseFloat(circle2.getAttribute("cx"))     
 
     // Start Loop
-    if (false) { // Aufgabe (4b)
+    if (cx1 > cx2 + 10) { // Aufgabe (4b)
         ({v1, v2} = newVelocity(v1, v2))
     }
 
@@ -47,9 +47,7 @@ function animationLoop() {
 
     // Wenn der running-Wert nun stimmt (true ist, anstatt wie ganz am Anfang falsch), dann wird die Animation wieder neu gestartet. Also das Fenster in dem sie ist wird wieder geöffnet.
     // 
-    if ( running === true ) {
-        window.requestAnimationFrame(animationLoop)
-    }
+
 
     if (cx2 <= 95) {
         window.requestAnimationFrame(animationLoop)
