@@ -1,3 +1,3 @@
-# Prüfung 1W
+# Prüfung 1Eb
 
-Dies ist die Prüfung von Vorname Nachname.
+Dies ist die Prüfung von Lisa Werner.

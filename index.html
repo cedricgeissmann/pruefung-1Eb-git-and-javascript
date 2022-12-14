@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prüfung 1W</title>
+    <title>Prüfung 1Eb</title>
 
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
@@ -14,10 +14,13 @@
 <body>
     <h1>Misteriöse Zahl: <span id="zahl"></span> </h1>
     <div class="btn-container">
-        <button>START</button>
+        <button onclick="start()">START</button>
+        <button onclick="start()">STOP</button>
     </div>
     <div class="container">
-        <svg id="svg-field" height="1" width="1" viewBox="0 0 1 1">
+        <svg id="svg-field" height="100" width="100" viewBox="0 0 100 100">
+            <circle id="circ1" cx="80" cy="50" r="5" fill="black"></circle>
+            <circle id="circ2" cx="20" cy="50" r="5" fill="blue"></circle>
         </svg>
     </div>
 </body>
