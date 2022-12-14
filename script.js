@@ -21,7 +21,9 @@ function start() {
     count = 0
     v1 = -1
     v2 = 0
-    window.requestAnimationFrame(animationLoop)
+    if (cx2 <= 95) {
+        window.requestAnimationFrame(animationLoop)
+    }
 }
 
 function animationLoop() {
@@ -51,7 +53,9 @@ function animationLoop() {
     // Kommentiere hier (f)
     // Das hier ist eine Bedingung die besagt das beim Refreshen oder neuladen der Seite die Funktion animationloop ausgelöst wird, wenn die variable running true ist, also auf true gesetzt ist.
     if ( running === true ) {
-        window.requestAnimationFrame(animationLoop)
+        if (cx2 <= 95) {
+            window.requestAnimationFrame(animationLoop)
+        }
     }
 }
 
@@ -65,4 +69,10 @@ function newVelocity(v1, v2) {
 
 function displayNumber() {
     return (count / 10**digits).toFixed(digits)
+
 }
+
+function stop() {
+    running = false
+}
+
