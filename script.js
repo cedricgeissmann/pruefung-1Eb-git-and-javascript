@@ -46,7 +46,7 @@ function animationLoop() {
     circle2.setAttribute("cx", cx2)
 
     // Kommentiere hier (f)
-    // 
+    // Wenn die Aktion rennen wahr ist, wird eine Animationloop ausgeführt.
     if ( running === true ) {
         window.requestAnimationFrame(animationLoop)
     }
