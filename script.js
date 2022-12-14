@@ -55,6 +55,11 @@ function animationLoop() {
     if (cx2 + 5 === cx1 - 5 ) {
     count = count++
     }
+
+    if (cx2 === 5) {
+        v2 = v2 * (-1)
+        count = count++
+    }
 }
 
 
