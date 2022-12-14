@@ -1,6 +1,6 @@
 
 // Kommentiere hier (b)
-// 
+// Der Kreis1 soll immer konstant bleiben und sucht  die Id--> circ1 im html.
 const circle1 = document.querySelector("#circ1")
 const circle2 = document.querySelector("#circ2")
 
